@@ -1,5 +1,6 @@
 .clipNotch {
     position: relative;
+    border: 2px solid rgb(218, 74, 145);
 
     overflow: hidden;
     clip-path: polygon(
@@ -13,7 +14,9 @@
       0% 90%,
       0% 10%
     );
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(218, 74, 145, 0.7), 0 0 40px rgba(218, 74, 145, 0.5), 0 0 60px rgba(218, 74, 145, 0.3);
+    animation: glowing 2s infinite;
+  
   }
   
   .clipNotch::before,
@@ -48,4 +51,28 @@
     filter: brightness(1.5);
 
   }
+
+  .techStacks {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .techStacksMobile {
+    flex-direction: column;
+  }
+
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 10px rgba(218, 74, 145, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(218, 74, 145, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(218, 74, 145, 0.7);
+    }
+  }
+  
+  
+  
   
