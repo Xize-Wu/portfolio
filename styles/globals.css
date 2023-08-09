@@ -26,6 +26,9 @@ body {
     rgb(var(--background-start-rgb));
     margin: 0;
   padding: 0;
+  background-image: url('./bg-pic2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 
   
 
