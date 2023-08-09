@@ -5,6 +5,7 @@ import styles from '../styles/index.module.css';
 import React, { useEffect, useState } from "react";
 import selfie from '../public/selfie.png'
 import goal from '../public/goal.png'
+import tinyapp from '../public/tinyapp.png'
 
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className=" px-10">
+      <main className=" px-10 ">
         <nav className="py-7 flex justify-between">
           <h1 className="text-xl"></h1>
 
@@ -40,7 +41,7 @@ export default function Home() {
             <li><a className="bg-gradient-to-r from-purple-500 to-fuchsia-600 text-white px-4 py-2 mr-10 zborder-none rounded-md ml-8" href="https://resume.creddle.io/resume/asz116adapd">Resume</a></li>
           </ul>
         </nav>
-        <section className={`${styles.transparentPink}`}>
+        <section className={`${styles.transparentPink} min-h-screen`}>
 
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-purple-800 font-medium" >Aster Wu</h2>
@@ -71,7 +72,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-            <AiFillGithub />
+                <AiFillGithub />
               </a>
             </div>
             {/* <AiTwotoneMail /> */}
@@ -90,11 +91,7 @@ export default function Home() {
         <section className={`${styles.transparentPink} min-h-screen`}>
           <div className="text-3xl py-1">
             <h3 className="text-3xl py-2 text-purple-800 font-medium pl-5 text-center">My Tech Stacks</h3>
-            {/* <p className="text-md py-2 leading-8 ">
-
-            </p> */}
-            <div className={` py-10 px-10 mb-12 flex justify-between ${styles.techStacks} ${isMobile ? styles.techStacksMobile : ''} pl-60 pr-60`}>
-              {/*className={`${styles.clipNotch} text-md py-5 leading-8 text-purple-950 border-2 p-6 border-fuchsia-700 clip-notch`}*/}
+            <div className={`min-w-min py-10 px-10 mb-12 flex justify-between ${styles.techStacks} ${isMobile ? styles.techStacksMobile : ''}`}>
               <div className={`${styles.clipNotch} flex justify-center border-fuchsia-700 items-center py-2 px-5 h-full flex-col text-center shadow-lg p-10 `}>
                 <h4 className="text-3xl py-2 text-purple-800 font-medium px-3 ">Languages</h4>
                 <ul>
@@ -126,7 +123,7 @@ export default function Home() {
                   <li>Sequelize</li>
                   <li>Prisma</li>
                   <li>Git</li>
-                  <li>Mocha</li>contain
+                  <li>Mocha</li>
                   <li>Chai</li>
                   <li>Cypress</li>
                   <li>Storybook</li>
@@ -140,8 +137,10 @@ export default function Home() {
         <section className={`${styles.transparentPink} min-h-screen`}>
           <div className="text-3xl py-1">
             <h3 className="text-3xl pb-10 pl-5 text-purple-800 font-medium text-center">My Projects</h3>
+            <a href="https://github.com/Xize-Wu/GOAL">
             <div className={`mt-10 ${styles.clipNotch} flex justify-center  text-purple-800 border-fuchsia-700 items-center py-2 px-5 h-full flex-col text-center shadow-lg p-10`}>
-              <div className='mt-5' >G.O.A.L.</div>
+                <div className='mt-5' >
+                  G.O.A.L.</div>
               <div className={`text-md py-5 leading-8 text-purple-950`}>
                 <p className="text-base">
                   A productivity and organization app that allows a user to establish long-term goals and break them down into digestible milestones, as well as letting the user get in touch with an accountability buddy and stay in touch via chat.
@@ -150,15 +149,20 @@ export default function Home() {
                   Built with React, utilizing libraries such as prisma and websocket.                </p>
               </div>
               <div className="relative mx-auto layout-fill bg-gradient-to-b from-pink-500 w-96 h-96 mb-10 overflow-hidden">
-                <Image
-                  src={goal}
-                  layout="fill"
-                  objectFit="cover"
-                  objectPosition="center center"
-                />
+                  <Image
+                    src={goal}
+                    alt="goal"
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="center center"
+                    className="z-10" 
+                  />
 
               </div>
+
+
             </div>
+            </a>
             <div className={`mt-10 ${styles.clipNotch} flex justify-center  text-purple-800 border-fuchsia-700 items-center py-2 px-5 h-full flex-col text-center shadow-lg p-10`}>
               <div className='mt-5' >TinyApp React</div>
               <div className={`text-md py-5 leading-8 text-purple-950`}>
@@ -166,9 +170,21 @@ export default function Home() {
                   TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly). Users can register and login. Each user is tracked with a cookie. Only logged in users can create & edit their own links.
                 </p>
                 <p className="text-base">
-                  This was a rebuilt of Lighthouse Labs Web Development project using react framework, vite and sequelize.
+                  This was a rebuild of the original TinyApp project using react framework, vite and sequelize.
                 </p>
               </div>
+              <div className="relative mx-auto layout-fill w-96 h-96 mb-10 overflow-hidden">
+                  <Image
+                    src={tinyapp}
+                    alt="goal"
+                    layout="fill"
+                    objectFit="contain"
+                    objectPosition="center center"
+                    className="z-10" 
+                  />
+
+              </div>
+
 
             </div>
 
