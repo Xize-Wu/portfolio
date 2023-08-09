@@ -1,0 +1,51 @@
+.clipNotch {
+    position: relative;
+
+    overflow: hidden;
+    clip-path: polygon(
+      0 10%,
+      10% 0,
+      90% 0,
+      100% 10%,
+      100% 90%,
+      90% 100%,
+      10% 100%,
+      0% 90%,
+      0% 10%
+    );
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .clipNotch::before,
+  .clipNotch::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #da4a91; 
+    clip-path: polygon(
+      0 10%,
+      10% 0,
+      90% 0,
+      100% 10%,
+      100% 90%,
+      90% 100%,
+      10% 100%,
+      0% 90%,
+      0% 10%
+    );
+    filter: brightness(2); 
+
+  }
+  
+  .clipNotch::after {
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    filter: brightness(1.5);
+
+  }
+  

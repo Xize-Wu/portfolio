@@ -1,5 +1,7 @@
 import Head from "next/head"
 import { AiOutlineCompass,AiFillLinkedin, AiFillGithub, AiTwotoneMail, AiTwotoneExclamationCircle} from "react-icons/ai"
+import Image from "next/image"
+import styles from '../styles/index.module.css'; // Import your component-specific styles
 
 
 export default function Home() {
@@ -23,9 +25,9 @@ export default function Home() {
       <div className="text-center p-10">
         <h2 className="text-5xl py-2 text-purple-800 font-medium" >Aster Wu</h2>
         <h3 className="text-2xl py-2 text-purple-900">Full-Stack Web Developer.</h3>
-        <div className="text-md py-5 leading-8 text-fuchsia-950">
+        <div className={`${styles.clipNotch} text-md py-5 leading-8 text-purple-950 border-2 p-6 border-fuchsia-700 clip-notch`}>
         <p>
-          Some realized their passion is coding before 18, and I only realized after recieving degrees in economy and business, and working differnet jobs.           Luckily, I'm never afraid of learning new things, and have graduated from Lighthouse Labs Web Development Bootcamp after 12 weeks of intense, immersive studying. 
+          Some realized their passion is coding before 18, and I realized it after recieving degrees in economy and business, and working differnet jobs.           Luckily, I'm never afraid of learning new things, and have graduated from Lighthouse Labs Web Development Bootcamp after 12 weeks of intense, immersive studying. 
         </p>
         <p>
           Life is a series of never-ending challenges, and now I feel ready for my new challenge as web developer. 
@@ -36,11 +38,14 @@ export default function Home() {
         <AiFillLinkedin/>
         <AiFillGithub/>
         <AiTwotoneMail/>
-        <div>
+        <div className="">
 
         </div>
       </div>
     </section>
+    <div>
+      <h3></h3>
+    </div>
   </main>
 </div>
   )
