@@ -75,9 +75,10 @@ export default function Home() {
                 <AiFillGithub />
               </a>
             </div>
-            {/* <AiTwotoneMail /> */}
+            <a href="mailto:asterwu2@gmail.com"><AiTwotoneMail /></a>
+
           </div>
-          <div className="relative mx-auto layout-fill bg-gradient-to-b from-pink-500 rounded-full w-80 h-80 mb-10 overflow-hidden">
+          <div className="relative mx-auto layout-fill bg-gradient-to-b from-pink-500 rounded-full w-60 h-60 mb-10 overflow-hidden">
             <Image
               src={selfie}
               alt="Selfie Image"
@@ -138,30 +139,30 @@ export default function Home() {
           <div className="text-3xl py-1">
             <h3 className="text-3xl pb-10 pl-5 text-purple-800 font-medium text-center">My Projects</h3>
             <a href="https://github.com/Xize-Wu/GOAL">
-            <div className={`mt-10 ${styles.clipNotch} flex justify-center  text-purple-800 border-fuchsia-700 items-center py-2 px-5 h-full flex-col text-center shadow-lg p-10`}>
+              <div className={`mt-10 ${styles.clipNotch} flex justify-center  text-purple-800 border-fuchsia-700 items-center py-2 px-5 h-full flex-col text-center shadow-lg p-10`}>
                 <div className='mt-5' >
                   G.O.A.L.</div>
-              <div className={`text-md py-5 leading-8 text-purple-950`}>
-                <p className="text-base">
-                  A productivity and organization app that allows a user to establish long-term goals and break them down into digestible milestones, as well as letting the user get in touch with an accountability buddy and stay in touch via chat.
-                </p>
-                <p className="text-base">
-                  Built with React, utilizing libraries such as prisma and websocket.                </p>
-              </div>
-              <div className="relative mx-auto layout-fill bg-gradient-to-b from-pink-500 w-96 h-96 mb-10 overflow-hidden">
+                <div className={`text-md py-5 leading-8 text-purple-950`}>
+                  <p className="text-base">
+                    A productivity and organization app that allows a user to establish long-term goals and break them down into digestible milestones, as well as letting the user get in touch with an accountability buddy and stay in touch via chat.
+                  </p>
+                  <p className="text-base">
+                    Built with React, utilizing libraries such as prisma and websocket.                </p>
+                </div>
+                <div className="relative mx-auto layout-fill bg-gradient-to-b from-pink-500 w-96 h-96 mb-10 overflow-hidden">
                   <Image
                     src={goal}
                     alt="goal"
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center center"
-                    className="z-10" 
+                    className="z-10"
                   />
 
+                </div>
+
+
               </div>
-
-
-            </div>
             </a>
             <div className={`mt-10 ${styles.clipNotch} flex justify-center  text-purple-800 border-fuchsia-700 items-center py-2 px-5 h-full flex-col text-center shadow-lg p-10`}>
               <div className='mt-5' >TinyApp React</div>
@@ -174,14 +175,14 @@ export default function Home() {
                 </p>
               </div>
               <div className="relative mx-auto layout-fill w-96 h-96 mb-10 overflow-hidden">
-                  <Image
-                    src={tinyapp}
-                    alt="goal"
-                    layout="fill"
-                    objectFit="contain"
-                    objectPosition="center center"
-                    className="z-10" 
-                  />
+                <Image
+                  src={tinyapp}
+                  alt="goal"
+                  layout="fill"
+                  objectFit="contain"
+                  objectPosition="center center"
+                  className="z-10"
+                />
 
               </div>
 
