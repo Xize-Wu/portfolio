@@ -134,7 +134,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={`${styles.transparentPink} min-h-screen`}>
+        <section className={`${styles.transparentPink} min-h-screen pb-24`}>
           <div className="text-3xl py-1">
             <h3 className="text-3xl pb-10 pl-5 text-purple-800 font-medium text-center">My Projects</h3>
             <a href="https://github.com/Xize-Wu/GOAL">
