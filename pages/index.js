@@ -149,14 +149,15 @@ export default function Home() {
                   <p className="text-base">
                     Built with React, utilizing libraries such as prisma and websocket.                </p>
                 </div>
-                <div className="max-w-[50%] relative mx-auto layout-fill bg-gradient-to-b from-pink-500 w-96 h-96 mb-10 overflow-hidden">
+                <div className="max-w-[50%] relative mx-auto layout-fill  w-96 h-96 mb-10 overflow-hidden">
                   <Image
+                  className="object-contain w-full h-auto z-10"
                     src={goal}
                     alt="goal"
                     layout="fill"
                     objectFit="cover"
                     objectPosition="center center"
-                    className="z-10"
+
                   />
 
                 </div>
